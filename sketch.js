@@ -5,7 +5,9 @@ background(245, 243, 240);
 }
 
 function draw() {
+
 //Retângulos
+
 //vermelho
 fill(215,32,0);
 rect(0,0,351,324);
@@ -39,6 +41,4 @@ rect(598,529,9,271);
 fill(2,2,4);
 rect(363,755,235,9);
 
-noStroke();
-strokeWeight(0);
 }
