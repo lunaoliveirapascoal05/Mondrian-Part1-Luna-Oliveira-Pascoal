@@ -1,7 +1,13 @@
-function setup() {
+async function setup() {
+
 //tela
 createCanvas(800,784);
 background(245, 243, 240);
+
+
+//textura
+img = await loadImage ('textura.jpg');
+noLoop();
 }
 
 function draw() {
@@ -40,5 +46,16 @@ rect(598,529,9,271);
 
 fill(2,2,4);
 rect(363,755,235,9);
+
+push();
+blendMode(MULTIPLY);
+tint(255,100);
+image(img, 0, 0, width, height); 
+pop();
+
+
+function windowResized() {
+resizeCanvas(windowWidth, windowHeight);
+}
 
 }
