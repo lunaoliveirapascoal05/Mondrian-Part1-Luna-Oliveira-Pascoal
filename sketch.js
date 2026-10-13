@@ -15,14 +15,17 @@ function draw() {
 //Retângulos
 
 //vermelho
+noStroke();
 fill(215,32,0);
 rect(0,0,351,324);
  
 //amarelo 
+noStroke();
 fill(227,198,0);
 rect(0,529,77,271);
 
 //azul
+noStroke();
 fill(33,31,104);
 rect(363,529,235,226);
 
