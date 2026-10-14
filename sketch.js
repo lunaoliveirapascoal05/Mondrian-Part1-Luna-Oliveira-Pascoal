@@ -1,8 +1,23 @@
+
+//fade de cores
+function gradientFilter(){
+    let startColor = color(245, 243, 240);
+    let endColor = color(208,199,202);
+    for (let y= 0; y < 784; y += 1){
+        let amt = map(y, 0, 784, 0, 1);
+        let gradColor = lerpColor (startColor, endColor, amt);
+        stroke (gradColor);
+        line(0,y,width,y);
+    
+    }
+
+}
+
 async function setup() {
 
 //tela
 createCanvas(800,784);
-background(245, 243, 240);
+gradientFilter();
 
 
 //textura
