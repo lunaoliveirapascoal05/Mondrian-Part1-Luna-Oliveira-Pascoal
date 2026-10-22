@@ -14,7 +14,7 @@ Começei por escrever img para guardar a textura que tinha colocado, que iguala 
 Escrevi noLoop() para que a imagem ficasse estática.
 
 No final do código, adicionei linhas relacionadas á textura, para que esta funcionasse, abri um push() que usado juntamente com o pop(), serve para conter certas ações para linhas específicas sem se aplicar às outras linhas também.
-Usei o blendMode(MULTIPLY) para fazer com que fique com menos opacidade.
+Usei o blendMode(MULTIPLY) (referência: https://p5js.org/reference/p5/blendMode/) para fazer com que fique com menos opacidade.
 Depois usei o tint() para escolher as cores que queria usar (cor de cima mais clara, cor de baixo mais escura, dentro dos parêntesis).
 Referenciei novamente a imagem da textura que já tinha sido mencionada acima no código, "image(img,,,,);"
 Dentro do parêntesis coloquei width e height para referenciar as medidas que dei no createCanvas(), e por fim fechei com o pop().
